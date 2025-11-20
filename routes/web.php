@@ -1,0 +1,19 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+
+Route::get('/seeker_login', function () {
+    return view('seeker_login');
+});
+
+Route::get('/seeker_register', function () {
+    return view('seeker_register');
+});
+
+Route::get('/employer_login', function () {
+    return view('employer_login');
+});
+
+Route::get('/employer_register', function () {
+    return view('employer_register');
+});
