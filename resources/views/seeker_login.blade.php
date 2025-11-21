@@ -23,7 +23,7 @@
                 </div>
 
                 <div class="text-role fw-medium ms-auto">
-                    <a href="employer_login">Are you a employer?</a>
+                    <a href="employer_login">Are you an employer?</a>
                 </div>
 
             </div>

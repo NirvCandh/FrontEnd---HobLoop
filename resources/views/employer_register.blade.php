@@ -96,6 +96,8 @@
                         <a href="employer_login">Login</a>
                     </div>
 
+                    <input type="hidden" name="role" value="seeker">
+
                 </div>
             </div>
         </div>

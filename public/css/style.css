@@ -89,3 +89,40 @@ input.form-control {
     color: #000000;
     text-decoration: underline;
 }
+
+.profile-text {
+    font-size: 36px;
+    font-weight: 600;
+    color: #363636;
+    margin-bottom: 24px;
+}
+
+.profile-card {
+    border-radius: 24px;
+    padding: 12px 12px 24px;
+}
+
+.profile-header {
+    background-color: #003366;
+    padding: 16px;
+    border-radius: 24px;
+}
+
+.highlight-name {
+    font-size: 32px;
+    margin: 0;
+    text-align: center;
+}
+
+.contact-box span {
+    font-size: 16px;
+}
+
+.personal-information {
+    margin: 0px 36px;
+}
+
+.text-secondary {
+    font-size: 16px;
+    color: #363636 !important;
+}

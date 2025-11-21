@@ -17,3 +17,7 @@ Route::get('/employer_login', function () {
 Route::get('/employer_register', function () {
     return view('employer_register');
 });
+
+Route::get('/profile_seeker', function () {
+    return view('profile_seeker');
+});

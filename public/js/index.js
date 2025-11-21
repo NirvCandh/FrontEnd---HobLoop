@@ -17,3 +17,28 @@ document.querySelectorAll('.toggle-pass').forEach(toggle => {
         }
     });
 });
+
+const dropArea = document.getElementById('cvDropArea');
+const fileInput = document.getElementById('cvInput');
+
+dropArea.addEventListener('click', () => fileInput.click());
+
+dropArea.addEventListener('dragover', (e) => {
+    e.preventDefault();
+    dropArea.parentElement.classList.add('drag-active');
+});
+
+dropArea.addEventListener('dragleave', () => {
+    dropArea.parentElement.classList.remove('drag-active');
+});
+
+dropArea.addEventListener('drop', (e) => {
+    e.preventDefault();
+    dropArea.parentElement.classList.remove('drag-active');
+
+    const file = e.dataTransfer.files[0];
+    fileInput.files = e.dataTransfer.files;
+
+    dropArea.querySelector('p.fw-bold').textContent = file.name;
+});
+

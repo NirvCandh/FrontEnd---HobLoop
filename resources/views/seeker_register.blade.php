@@ -23,7 +23,7 @@
                 </div>
 
                 <div class="text-role fw-medium ms-auto">
-                    <a href="employer_login">Are you a employer?</a>
+                    <a href="employer_login">Are you an employer?</a>
                 </div>
 
             </div>
@@ -122,6 +122,8 @@
                         <p>Already have an account?</p>
                         <a href="seeker_login">Login</a>
                     </div>
+
+                    <input type="hidden" name="role" value="seeker">
 
                 </div>
             </div>
