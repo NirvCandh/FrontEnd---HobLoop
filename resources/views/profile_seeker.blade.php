@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HobLoop</title>
+    <title>HobLoop - Profile</title>
 
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
@@ -13,10 +13,9 @@
 
 <body>
 
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg bg-transparent shadow-0 border-0"">
-        <div class="container-fluid">
-            <a class="logo-header navbar-brand navbar-brand-custom fw-bold" href="landing_page">HobLoop</a>
+    <nav class="navbar navbar-expand-lg bg-transparent shadow-0 border-0 p-0">
+        <div class="container-fluid p-4">
+            <a class="logo-header navbar-brand fw-bold me-5" href="landing_page">HobLoop</a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,22 +24,26 @@
 
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <div class="nav-links-box d-flex w-100">
-                    <ul class="navbar-nav">
-                        <li class="nav-item nav-link-item-custom">
+                    <ul class="navbar-nav nav-gap">
+                        <li class="nav-item">
                             <a class="nav-link" href="landing_page">Job search</a>
                         </li>
-                        <li class="nav-item nav-link-item-custom">
+                        <li class="nav-item">
                             <a class="nav-link" href="seeker_posting">Posting</a>
                         </li>
                         <li class="nav-item dropdown nav-link-item-custom">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center gap-1" href="#"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Profile
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                    <path d="M7 10L12.0008 14.58L17 10" stroke="#0A090B" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="profile_seeker">Profile</a></li>
                                 <li><a class="dropdown-item" href="change_password">Change password</a></li>
-                                <li><a class="dropdown-item" href="#">Log out</a></li>
+                                <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -60,10 +63,10 @@
         <div class="profile-card card shadow-sm border-0">
             <div class="card-body">
 
-                <div class="profile-header d-flex justify-content-between align-items-center flex-wrap">
+                <div class="profile-header d-flex align-items-center flex-wrap">
 
                     <div class="pic-name d-flex align-items-center mb-3 mb-md-0">
-                        <div class="bg-light rounded-circle p-4 me-3" style="width: 78px; height: 78px;"></div>
+                        <div class="bg-light rounded-circle p-4 me-3" style="width: 72px; height: 72px;"></div>
 
                         <div class="text-center">
                             <p class="highlight-name fw-medium text-white">Celeste Azher</p>
@@ -97,53 +100,54 @@
                 </div>
             </div>
 
-            <p class="fw-medium" style="font-size: 24px; color:#363636; margin:24px 36px 0px">Personal information</p>
+            <p class="fw-medium profile-section-title">Personal information</p>
 
             <div class="personal-information row g-4">
 
-                <div class="col-12 col-md-4 p-0">
-                    <p class="text-secondary fw-medium mb-0 small">Name</p>
-                    <p class="fw-regular" style="color: #363636">Celeste Azher</p>
+                <div class="col-12 col-md-4">
+                    <p class="text-secondary fw-medium mb-1 small">Name</p>
+                    <p class="fw-normal data-value mb-4">Celeste Azher</p>
 
-                    <p class="text-secondary fw-medium mb-0 small">Last education</p>
-                    <p class="fw-normal" style="color: #363636">Bachelor of Informatics</p>
+                    <p class="text-secondary fw-medium mb-1 small">Last education</p>
+                    <p class="fw-normal data-value mb-0">Bachelor of Informatics</p>
                 </div>
 
-                <div class="col-12 col-md-4 p-0">
-                    <p class="text-secondary fw-medium mb-0 small">Email</p>
-                    <p class="fw-normal" style="color: #363636">celesteazher@gmail.com</p>
+                <div class="col-12 col-md-4">
+                    <p class="text-secondary fw-medium mb-1 small">Email</p>
+                    <p class="fw-normal data-value mb-4">celesteazher@gmail.com</p>
 
-                    <p class="text-secondary fw-medium mb-0 small">Telephone</p>
-                    <p class="fw-normal" style="color: #363636">+62 123-456-78910</p>
+                    <p class="text-secondary fw-medium mb-1 small">Telephone</p>
+                    <p class="fw-normal data-value mb-0">+62 123-456-78910</p>
                 </div>
 
-                <div class="col-12 col-md-4 p-0">
+                <div class="col-12 col-md-4">
+                    <p class="text-secondary fw-medium mb-1 small">Gender</p>
+                    <p class="fw-normal data-value mb-4">Woman</p>
 
-                    <p class="text-secondary fw-medium mb-0 small">Gender</p>
-                    <p class="fw-normal" style="color: #363636">Woman</p>
+                    <div>
+                        <p class="text-secondary fw-medium mb-1 small">CV</p>
 
-                    <p class="text-secondary fw-medium mb-0 small mt-4">CV</p>
+                        <div class="cv-upload-card" id="cvUploadCard">
 
-                    <div class="cv-upload-card">
-                        <input type="file" id="cvInput" class="cv-input" accept=".pdf">
+                            <input type="file" id="cvInputFile" accept="application/pdf">
 
-                        <div class="cv-content" id="cvDropArea">
-                            <i class="fas fa-cloud-upload-alt fa-3x mb-3"></i>
-                            <p class="fw-normal mb-1">Drop your PDF here</p>
-                            <p class="text-secondary fw-medium small mb-0">or click to upload (max 10 MB)</p>
+                            <div id="cvDropArea">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.4058 21.6H5.6058C4.28031 21.6 3.2058 20.5254 3.20581 19.2L3.2059 4.80001C3.20591 3.47453 4.28043 2.40002 5.6059 2.40002H16.4062C17.7317 2.40002 18.8062 3.47454 18.8062 4.80002V11.4M17.3999 21.1882V17.7941M17.3999 17.7941V14.4M17.3999 17.7941L14.0058 17.7941M17.3999 17.7941L20.794 17.7941M7.40619 7.20002H14.6062M7.40619 10.8H14.6062M7.40619 14.4H11.0062"
+                                        stroke="#B2B2B2" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <p class="fw-normal mb-1">Upload your PDF here -</p>
+                                <p class="text-secondary fw-medium small mb-0">up to 10 MB</p>
+                            </div>
                         </div>
                     </div>
-
                 </div>
-
             </div>
-
-
         </div>
     </div>
-
-    </div>
-
 
     <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('js/index.js') }}"></script>

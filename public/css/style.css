@@ -5,15 +5,56 @@ body {
     font-style: normal;
 }
 
-.logo-header {
-    font-size: 32px;
+.navbar-brand {
+    margin-right: 72px;
 }
+
+.nav-gap {
+    display: flex;
+    gap: 24px;
+}
+
+.nav-link {
+    color: #363636;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 12px;
+}
+
+.nav-link.dropdown-toggle::after {
+    display: none !important;
+}
+
+.nav-link.dropdown-toggle svg {
+    transition: transform .2s;
+}
+
+.nav-link.dropdown-toggle.show svg {
+    transform: rotate(180deg);
+}
+
+.navbar-text {
+    color: #003366;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.logo-header {
+    font-size: 42px;
+}
+
 
 .text-role > a{
     font-size: 16px;
     font-weight: 400;
     text-decoration: underline;
     color: #363636;
+}
+
+.dropdown-item {
+    color: #363636;
+    font-weight: 400;
+    font-size: 16px;
 }
 
 .main-content {
@@ -99,7 +140,11 @@ input.form-control {
 
 .profile-card {
     border-radius: 24px;
-    padding: 12px 12px 24px;
+    padding: 0;
+}
+
+.profile-card .card-body {
+    padding: 24px 36px !important;
 }
 
 .profile-header {
@@ -114,15 +159,108 @@ input.form-control {
     text-align: center;
 }
 
+.contact-box {
+    margin-left: 144px;
+}
+
 .contact-box span {
     font-size: 16px;
 }
 
-.personal-information {
-    margin: 0px 36px;
+.profile-section-title {
+    font-size: 24px;
+    color: #363636;
+    margin: 0;
+    padding: 24px 36px 0;
 }
 
-.text-secondary {
-    font-size: 16px;
+.personal-information {
+    margin: 0;
+    padding: 24px 36px 36px;
+}
+
+.text-secondary.small {
+    font-size: 14px;
     color: #363636 !important;
+    font-weight: 500;
+}
+
+.fw-normal.data-value {
+    color: #363636;
+    font-weight: 400;
+}
+
+.cv-upload-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 10px;
+    text-align: center;
+    background-color: #f7f7f7;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+.cv-upload-card.drag-active {
+    border: 2px dashed #007bff;
+    background-color: #e6f3ff;
+}
+
+.cv-upload-card.file-selected {
+    border: 2px solid #28a745;
+}
+
+#cvInputFile {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#cvDropArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#cvDropArea svg {
+    margin-bottom: 5px;
+    stroke: #B2B2B2;
+}
+
+#cvDropArea p.fw-normal {
+    font-weight: normal;
+    margin-bottom: 2px;
+    color: #555;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 90%;
+}
+
+#cvDropArea p.text-secondary {
+    color: #888;
+    font-size: 0.75em;
+    font-weight: 500;
+}
+
+@media (max-width: 1000px) {
+    .contact-box {
+        margin-left: 0;
+        margin-top: 16px;
+        text-align: start;
+    }
 }

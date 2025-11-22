@@ -21,3 +21,7 @@ Route::get('/employer_register', function () {
 Route::get('/profile_seeker', function () {
     return view('profile_seeker');
 });
+
+Route::get('/change_password', function () {
+    return view('change_password');
+});

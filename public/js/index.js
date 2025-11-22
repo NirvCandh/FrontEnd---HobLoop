@@ -18,27 +18,51 @@ document.querySelectorAll('.toggle-pass').forEach(toggle => {
     });
 });
 
-const dropArea = document.getElementById('cvDropArea');
-const fileInput = document.getElementById('cvInput');
+document.addEventListener('DOMContentLoaded', () => {
+    const cvUploadCard = document.getElementById('cvUploadCard');
+    const cvInputFile = document.getElementById('cvInputFile');
+    const cvDropArea = document.getElementById('cvDropArea');
+    const fileNameDisplay = cvDropArea.querySelector('p.fw-normal');
+    const fileLimitText = cvDropArea.querySelector('p.text-secondary');
 
-dropArea.addEventListener('click', () => fileInput.click());
+    const defaultFileNameText = 'Upload your PDF here -';
+    const defaultLimitText = 'up to 10 MB';
+    const activeDragClass = 'drag-active';
 
-dropArea.addEventListener('dragover', (e) => {
-    e.preventDefault();
-    dropArea.parentElement.classList.add('drag-active');
+    const handleFileSelection = (fileList) => {
+        if (fileList.length > 0) {
+            const file = fileList[0];
+
+            cvInputFile.files = fileList;
+
+            fileNameDisplay.textContent = file.name;
+            fileLimitText.textContent = `Size: ${(file.size / 1024 / 1024).toFixed(2)} MB (PDF)`;
+            cvUploadCard.classList.add('file-selected');
+
+            console.log("File selected/dropped:", file.name);
+        } else {
+            fileNameDisplay.textContent = defaultFileNameText;
+            fileLimitText.textContent = defaultLimitText;
+            cvUploadCard.classList.remove('file-selected');
+        }
+    };
+
+    cvInputFile.addEventListener('change', (event) => {
+        handleFileSelection(event.target.files);
+    });
+
+    cvDropArea.addEventListener('dragover', (event) => {
+        event.preventDefault();
+        cvUploadCard.classList.add(activeDragClass);
+    });
+
+    cvDropArea.addEventListener('dragleave', () => {
+        cvUploadCard.classList.remove(activeDragClass);
+    });
+
+    cvDropArea.addEventListener('drop', (event) => {
+        event.preventDefault();
+        cvUploadCard.classList.remove(activeDragClass);
+        handleFileSelection(event.dataTransfer.files);
+    });
 });
-
-dropArea.addEventListener('dragleave', () => {
-    dropArea.parentElement.classList.remove('drag-active');
-});
-
-dropArea.addEventListener('drop', (e) => {
-    e.preventDefault();
-    dropArea.parentElement.classList.remove('drag-active');
-
-    const file = e.dataTransfer.files[0];
-    fileInput.files = e.dataTransfer.files;
-
-    dropArea.querySelector('p.fw-bold').textContent = file.name;
-});
-
