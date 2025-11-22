@@ -41,9 +41,8 @@
                                 </svg>
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="profile_seeker">Profile</a></li>
+                                <li><a class="dropdown-item" href="profile_employer">Profile</a></li>
                                 <li><a class="dropdown-item" href="change_password">Change password</a></li>
-                                <li><a class="dropdown-item" href="change_password">Saved job</a></li>
                                 <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
                             </ul>
                         </li>
@@ -97,6 +96,22 @@
                 </div>
             </div>
 
+            <p class="fw-medium profile-section-title">About</p>
+
+            <div class="about-section">
+                <div class="form-control company-about-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tellus odio, consectetur eu
+                        pellentesque id, laoreet eget dui. Pellentesque vitae nisi ornare eros fermentum tristique. Duis
+                        eu diam vehicula, scelerisque libero et, eleifend ante. Pellentesque habitant morbi tristique
+                        senectus et netus et malesuada fames ac turpis egestas. In condimentum leo ut ex vehicula,
+                        elementum venenatis lectus tempus. Fusce ac urna nec eros lobortis feugiat a eu sapien. Nullam
+                        placerat erat id nisl fringilla, ac egestas nisi egestas. Proin et malesuada odio. Etiam posuere
+                        orci ut elit viverra, ac molestie nulla rhoncus. Vestibulum libero magna, tristique ac est eget,
+                        suscipit hendrerit nisl.  Pellentesque habitant morbi tristique senectus et netus et malesuada
+                        fames ac turpis egestas. Praesent vitae mauris quam. In nec tempor felis, porta.</p>
+                </div>
+            </div>
+
             <p class="fw-medium profile-section-title">Personal information</p>
 
             <div class="personal-information row g-4">
@@ -104,43 +119,17 @@
                 <div class="col-12 col-md-4">
                     <p class="text-secondary fw-medium mb-1 small">Name</p>
                     <p class="fw-normal data-value mb-4">Celeste Azher</p>
-
-                    <p class="text-secondary fw-medium mb-1 small">Last education</p>
-                    <p class="fw-normal data-value mb-0">Bachelor of Informatics</p>
                 </div>
 
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4 p-0">
                     <p class="text-secondary fw-medium mb-1 small">Email</p>
                     <p class="fw-normal data-value mb-4">celesteazher@gmail.com</p>
-
-                    <p class="text-secondary fw-medium mb-1 small">Telephone</p>
-                    <p class="fw-normal data-value mb-0">+62 123-456-78910</p>
                 </div>
 
-                <div class="col-12 col-md-4 ">
+                <div class="col-12 col-md-4 p-0">
                     <p class="text-secondary fw-medium mb-1 small">Gender</p>
                     <p class="fw-normal data-value mb-4">Woman</p>
 
-                    <div>
-                        <p class="text-secondary fw-medium mb-1 small">CV</p>
-
-                        <div class="cv-upload-card" id="cvUploadCard">
-
-                            <input type="file" id="cvInputFile" accept="application/pdf">
-
-                            <div id="cvDropArea">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M10.4058 21.6H5.6058C4.28031 21.6 3.2058 20.5254 3.20581 19.2L3.2059 4.80001C3.20591 3.47453 4.28043 2.40002 5.6059 2.40002H16.4062C17.7317 2.40002 18.8062 3.47454 18.8062 4.80002V11.4M17.3999 21.1882V17.7941M17.3999 17.7941V14.4M17.3999 17.7941L14.0058 17.7941M17.3999 17.7941L20.794 17.7941M7.40619 7.20002H14.6062M7.40619 10.8H14.6062M7.40619 14.4H11.0062"
-                                        stroke="#B2B2B2" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
-                                <p class="fw-normal mb-1">Upload your PDF here -</p>
-                                <p class="text-secondary fw-medium small mb-0">up to 10 MB</p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
             <a href="/edit-profile" class="btn-edit d-flex align-items-center justify-content-center shadow mt-5">

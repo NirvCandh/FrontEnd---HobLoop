@@ -22,6 +22,10 @@ Route::get('/profile_seeker', function () {
     return view('profile_seeker');
 });
 
+Route::get('/profile_employer', function () {
+    return view('profile_employer');
+});
+
 Route::get('/change_password', function () {
     return view('change_password');
 });

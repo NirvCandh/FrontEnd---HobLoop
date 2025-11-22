@@ -131,6 +131,8 @@ input.form-control {
     text-decoration: underline;
 }
 
+/* Profile */
+
 .profile-text {
     font-size: 36px;
     font-weight: 600;
@@ -141,6 +143,7 @@ input.form-control {
 .profile-card {
     border-radius: 24px;
     padding: 0;
+    margin-bottom: 100px;
 }
 
 .profile-card .card-body {
@@ -148,6 +151,7 @@ input.form-control {
 }
 
 .profile-header {
+    position: relative;
     background-color: #003366;
     padding: 16px;
     border-radius: 24px;
@@ -160,6 +164,7 @@ input.form-control {
 }
 
 .contact-box {
+    row-gap: 12px;
     margin-left: 144px;
 }
 
@@ -167,16 +172,48 @@ input.form-control {
     font-size: 16px;
 }
 
+.btn-edit {
+    width: 64px;
+    height: 64px;
+    background-color: #003366;
+    text-decoration: none;
+    border-radius: 12px;
+
+    position: absolute;
+    bottom: -48px;
+    right: 24px;
+    z-index: 10;
+}
+
+.about-section {
+    margin: 0px 36px;
+}
+
+.company-about-text {
+    height: 180px;
+    resize: none;
+    border-radius: 12px;
+    padding: 16px;
+    font-size: 15px;
+    border: 1px solid #003366;
+}
+
+.company-about-text p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #363636;
+    text-align: start;
+}
+
 .profile-section-title {
     font-size: 24px;
     color: #363636;
-    margin: 0;
-    padding: 24px 36px 0;
+    margin-bottom: 24px;
+    padding: 24px 36px 0px;
 }
 
 .personal-information {
-    margin: 0;
-    padding: 24px 36px 36px;
+    padding: 0px 36px 24px;
 }
 
 .text-secondary.small {
@@ -262,5 +299,21 @@ input.form-control {
         margin-left: 0;
         margin-top: 16px;
         text-align: start;
+    }
+}
+
+@media (max-width: 768px) {
+    .highlight-name {
+        font-size: 24px;
+    }
+
+    .contact-box {
+        text-align: start;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .btn-edit {
+        right: 16px;
     }
 }
