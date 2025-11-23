@@ -310,6 +310,15 @@ input.form-control {
     font-weight: 500;
 }
 
+select.form-control {
+    border: 2px solid #003366;
+    font-size: 14px;
+}
+
+input.form-control {
+    font-size: 14px;
+}
+
 @media (max-width: 1000px) {
     .contact-box {
         margin-left: 0;
