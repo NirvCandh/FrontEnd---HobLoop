@@ -18,9 +18,7 @@
 
             <div class="header-wrapper col-12 col-lg-9 col-xl-7 d-flex justify-content-between align-items-center mb-4">
 
-                <div class="logo-header">
-                    <p class="fw-bold fs-3 mb-0">HobLoop</p>
-                </div>
+                <p class="logo-header fw-bold fs-3 mb-0">HobLoop</p>
 
                 <div class="text-role fw-medium ms-auto">
                     <a href="seeker_login">Are you looking for a job?</a>
@@ -63,6 +61,10 @@
                                     style="width:24px; display:none;">
                             </span>
                         </div>
+
+                        <a class="forgot-pass-text d-flex justify-content-end" href="forgot_password">
+                            <p>Forgot password?</p>
+                        </a>
 
                         <a class="register-login btn d-block w-100 text-white fw-medium" href="landing_page">
                             Login
