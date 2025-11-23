@@ -185,6 +185,22 @@ input.form-control {
     z-index: 10;
 }
 
+.btn-save {
+    width: 206px;
+    height: 72px;
+    background-color: #003366;
+    padding: 24px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    gap: 10px;
+    position: absolute;
+    bottom: -48px;
+    right: 24px;
+    z-index: 10;
+}
+
 .about-section {
     margin: 0px 36px;
 }
@@ -315,5 +331,15 @@ input.form-control {
 
     .btn-edit {
         right: 16px;
+    }
+
+    .btn-save {
+        width: 45%;
+        height: auto;
+        padding: 24px;
+        right: 0;
+        bottom: -32px;
+        font-size: 14px;
+        border-radius: 10px;
     }
 }
