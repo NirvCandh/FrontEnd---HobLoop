@@ -26,14 +26,18 @@ Route::get('/profile_employer', function () {
     return view('profile_employer');
 });
 
-Route::get('/change_password', function () {
-    return view('change_password');
-});
-
 Route::get('/edit_profile_employer', function () {
     return view('edit_profile_employer');
 });
 
 Route::get('/edit_profile_seeker', function () {
     return view('edit_profile_seeker');
+});
+
+Route::get('/change_password', function () {
+    return view('change_password');
+});
+
+Route::get('/forgot_password', function () {
+    return view('forgot_password');
 });

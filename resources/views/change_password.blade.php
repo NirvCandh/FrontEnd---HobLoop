@@ -52,7 +52,12 @@
 
 
     <div class="container my-5">
-        <p class="profile-text">Change password</p>
+        <div class="d-flex flex-wrap justify-content-between align-items-center px-4">
+            <p class="profile-text">Change password</p>
+            <div class="text-role fw-medium">
+                <a href="forgot_password">Forgot password?</a>
+            </div>
+        </div>
 
         <div class="profile-card card shadow-sm border-0">
             <div class="card-body">
@@ -79,9 +84,9 @@
                 <div class="text-password fw-medium position-relative mb-3">
                     <label class="form-label">New password</label>
 
-                    <input type="password" class="form-control" id="passInput">
+                    <input type="password" class="form-control" id="newPass">
 
-                    <span class="toggle-pass position-absolute translate-middle-y" data-target="passInput"
+                    <span class="toggle-pass position-absolute translate-middle-y" data-target="newPass"
                         style="cursor:pointer; right:12px; top:50px;">
 
                         <svg class="eye-closed" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -99,9 +104,9 @@
                 <div class="text-password fw-medium position-relative mb-3">
                     <label class="form-label">Confirm password</label>
 
-                    <input type="password" class="form-control" id="passInput">
+                    <input type="password" class="form-control" id="confirmPass">
 
-                    <span class="toggle-pass position-absolute translate-middle-y" data-target="passInput"
+                    <span class="toggle-pass position-absolute translate-middle-y" data-target="confirmPass"
                         style="cursor:pointer; right:12px; top:50px;">
 
                         <svg class="eye-closed" width="24" height="24" viewBox="0 0 24 24" fill="none"

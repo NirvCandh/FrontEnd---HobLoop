@@ -324,6 +324,12 @@ input.form-control {
     font-size: 14px;
 }
 
+.text-timer {
+    font-size: 14px;
+    font-weight: 400;
+    color: #363636;
+}
+
 @media (max-width: 1000px) {
     .contact-box {
         margin-left: 0;
