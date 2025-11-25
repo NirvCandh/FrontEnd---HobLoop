@@ -45,3 +45,7 @@ Route::get('/forgot_password', function () {
 Route::get('/landing_page', function () {
     return view('landing_page');
 });
+
+Route::get('/formpostingjob', function () {
+    return view('formpostingjob');
+});

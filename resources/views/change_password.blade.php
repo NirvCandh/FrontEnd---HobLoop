@@ -50,7 +50,6 @@
         </div>
     </nav>
 
-
     <div class="container my-5">
         <div class="d-flex flex-wrap justify-content-between align-items-center px-4">
             <p class="profile-text">Change password</p>
@@ -121,7 +120,6 @@
                     </span>
                 </div>
             </div>
-
 
             <a href="#"
                 class="btn-save d-flex align-items-center justify-content-center shadow mt-5 text-white gap-2 px-4 py-2"
