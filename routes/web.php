@@ -2,6 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 
+Route::get('/', function () {
+    return view('landing');
+});
+
+
 Route::get('/seeker_login', function () {
     return view('seeker_login');
 });
@@ -48,4 +53,8 @@ Route::get('/landing_page', function () {
 
 Route::get('/formpostingjob', function () {
     return view('formpostingjob');
+});
+
+Route::get('/view_posting', function () {
+    return view('view_posting');
 });

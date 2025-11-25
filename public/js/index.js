@@ -1,3 +1,14 @@
+document.addEventListener('DOMContentLoaded', function () {
+    const likeBtn = document.getElementById('saveBtn');
+    const likeOutline = document.getElementById('iconOutline');
+    const likeFill = document.getElementById('iconFill');
+
+    likeBtn.addEventListener('click', function () {
+        likeOutline.classList.toggle('hidden');
+        likeFill.classList.toggle('hidden');
+    });
+});
+
 document.querySelectorAll('.toggle-pass').forEach(toggle => {
     toggle.addEventListener('click', function () {
         const targetId = this.getAttribute('data-target');
@@ -102,3 +113,4 @@ sendBtn.addEventListener('click', function(e) {
 
     console.log("Reset link dikirim ke:", emailInput.value);
 });
+
