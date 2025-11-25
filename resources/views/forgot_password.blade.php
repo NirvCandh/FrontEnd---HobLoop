@@ -17,9 +17,6 @@
         <div class="row justify-content-center">
             <div class="header-wrapper col-12 col-lg-9 col-xl-7 d-flex justify-content-between align-items-center mb-4">
                 <p class="logo-header fw-bold fs-3 mb-0">HobLoop</p>
-                <div class="text-role fw-medium ms-auto">
-                    <a href="employer_login">Are you an employer?</a>
-                </div>
             </div>
         </div>
 

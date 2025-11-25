@@ -41,3 +41,7 @@ Route::get('/change_password', function () {
 Route::get('/forgot_password', function () {
     return view('forgot_password');
 });
+
+Route::get('/landing_page', function () {
+    return view('landing_page');
+});
