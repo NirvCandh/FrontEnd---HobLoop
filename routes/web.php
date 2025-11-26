@@ -58,3 +58,7 @@ Route::get('/formpostingjob', function () {
 Route::get('/view_posting', function () {
     return view('view_posting');
 });
+
+Route::get('/job_detail', function () {
+    return view('job_detail');
+});

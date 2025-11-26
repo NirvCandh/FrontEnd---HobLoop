@@ -417,6 +417,121 @@ input.form-control {
     transform: scale(0.9);
 }
 
+
+        :root {
+            --primary-color: #003366;
+            --text-dark: #0A090B;
+        }
+
+        body {
+            background-color: #f7f7f7;
+            /* Latar belakang body agar card terlihat */
+        }
+
+        .logo-header {
+            color: var(--primary-color) !important;
+            font-size: 1.5rem;
+        }
+
+        /* Card Styling */
+        .profile-card {
+            max-width: 900px;
+            margin: auto;
+            border-radius: 12px;
+            padding: 30px;
+        }
+
+        /* Detail Pekerjaan */
+        .job-title-post {
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--text-dark);
+            text-decoration: none;
+        }
+
+        .company-name-text {
+            font-size: 22px;
+            color: #363636 !important;
+        }
+
+        /* Ikon dan List Detail */
+        .job-info-list {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 30px;
+        }
+
+        .job-info-list li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: var(--text-dark);
+        }
+
+        .job-info-list svg {
+            /* Sesuaikan ukuran SVG agar tidak terlalu besar */
+            width: 24px;
+            height: 24px;
+            margin-right: 12px;
+            min-width: 24px;
+            /* Pastikan warna stroke/fill sesuai dengan teks detail */
+            stroke: #363636;
+        }
+
+        /* Dropdown Aksi (Titik Tiga) */
+        .action-dropdown-custom {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 10;
+        }
+
+        .save-btn {
+            width: 36px;
+            height: 36px;
+            border: none;
+            border-radius: 50%;
+            background: var(--primary-color);
+            cursor: pointer;
+            transition: background-color .25s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            padding: 0;
+        }
+
+        .red-placeholder {
+            width: 150px;
+            height: 20px;
+            background-color: #e53935;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+
+        .button-apply {
+            width: 206px;
+            font-size: 20px;
+            color: #ffffff;
+            background-color: #003366;
+            padding: 21px 52px;
+            border-radius: 12px;
+        }
+
+        .button-back-view {
+            width: 206px;
+            font-size: 20px;
+            color: #DA4242;
+            background-color: #E4E4E4;
+            padding: 21px 52px;
+            border-radius: 12px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
 @media (max-width: 1000px) {
     .contact-box {
         margin-left: 0;
