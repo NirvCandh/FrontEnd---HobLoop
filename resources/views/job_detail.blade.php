@@ -163,7 +163,7 @@
                     <button class="button-apply">
                         Apply
                     </button>
-                    <a href="view_posting" class="button-back-view">
+                    <a href="view_posting" class="button-back-login">
                         Back
                     </a>
                 </div>

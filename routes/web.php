@@ -62,3 +62,7 @@ Route::get('/view_posting', function () {
 Route::get('/job_detail', function () {
     return view('job_detail');
 });
+
+Route::get('/view-edit', function () {
+    return view('view-edit-employer');
+});
